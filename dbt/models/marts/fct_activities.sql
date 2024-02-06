@@ -1,9 +1,20 @@
 SELECT
-    id,
-    starttime,
-    endtime,
-    activityid,
-    activityname,
-    processinstanceid,
-    processdefinitionkey
+    id, 
+    taskid, 
+    endtime, 
+    canceled, 
+    starttime, 
+    activityid, 
+    executionid, 
+    removaltime, 
+    activityname, 
+    activitytype, 
+    completescope, 
+    durationinmillis, 
+    processinstanceid, 
+    processdefinitionid, 
+    processdefinitionkey, 
+    rootprocessinstanceid, 
+    calledprocessinstanceid, 
+    parentactivityinstanceid 
 FROM {{ ref('stg_activity_instance') }} as activities
