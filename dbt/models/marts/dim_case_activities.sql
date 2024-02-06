@@ -11,6 +11,7 @@ SELECT
     case_activities.casedefinitionid,
     case_activities.durationinmillis,
     cases.businessKey,
+    cases.id as case_id,
     cases.caseDefinitionName
 FROM {{ ref('fct_case_activities') }} as case_activities
 LEFT JOIN {{ ref('fct_cases') }} as cases
