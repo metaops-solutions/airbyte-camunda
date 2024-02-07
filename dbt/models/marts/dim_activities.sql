@@ -7,7 +7,8 @@ SELECT
     activities.activityname,
     processes.id as process_id,
     processes.businesskey,
-    processes.processdefinitionname
+    processes.processdefinitionname,
+    processes.processdefinitionkey
 FROM {{ ref('fct_activities') }} as activities
 LEFT JOIN {{ ref('fct_processes') }} as processes
 ON ( activities.processinstanceid = processes.id )
