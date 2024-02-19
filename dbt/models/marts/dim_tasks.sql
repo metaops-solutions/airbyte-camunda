@@ -18,7 +18,7 @@ SELECT
     cases.businesskey as case_businesskey,
     cases.id as case_id,
     activities.activityname,
-    activities.id as activity_id
+    activities.activityid as activityid
 FROM {{ ref('fct_tasks') }} as tasks
 LEFT JOIN {{ ref('fct_processes') }} as processes
 ON ( tasks.processInstanceId = processes.id )

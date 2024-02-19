@@ -5,6 +5,7 @@ SELECT
     EXTRACT(EPOCH FROM (activities.endtime - activities.starttime)) as duration_seconds,
     activities.activityid,
     activities.activityname,
+    activities.activitytype,
     processes.id as process_id,
     processes.businesskey,
     processes.processdefinitionname,
