@@ -147,7 +147,7 @@ streams:
         type: MinMaxDatetime
         datetime: '{{ config[''start_date''] }}'
         datetime_format: '%Y-%m-%dT%H:%M:%SZ'
-      datetime_format: '%Y-%m-%dT%H:%M:%S.%f%z'
+      datetime_format: '%Y-%m-%dT%H:%M:%S.000%z'
       start_time_option:
         type: RequestOption
         field_name: startedAfter
@@ -255,7 +255,7 @@ streams:
         type: MinMaxDatetime
         datetime: '{{ config[''start_date''] }}'
         datetime_format: '%Y-%m-%dT%H:%M:%SZ'
-      datetime_format: '%Y-%m-%dT%H:%M:%S.%f%z'
+      datetime_format: '%Y-%m-%dT%H:%M:%S.000%z'
       start_time_option:
         type: RequestOption
         field_name: finishedAfter
@@ -361,7 +361,7 @@ streams:
         type: MinMaxDatetime
         datetime: '{{ config[''start_date''] }}'
         datetime_format: '%Y-%m-%dT%H:%M:%SZ'
-      datetime_format: '%Y-%m-%dT%H:%M:%S.%f%z'
+      datetime_format: '%Y-%m-%dT%H:%M:%S.000%z'
       start_time_option:
         type: RequestOption
         field_name: startedAfter
@@ -467,7 +467,7 @@ streams:
         type: MinMaxDatetime
         datetime: '{{ config[''start_date''] }}'
         datetime_format: '%Y-%m-%dT%H:%M:%SZ'
-      datetime_format: '%Y-%m-%dT%H:%M:%S.%f%z'
+      datetime_format: '%Y-%m-%dT%H:%M:%S.000%z'
       start_time_option:
         type: RequestOption
         field_name: finishedAfter
@@ -630,7 +630,7 @@ streams:
         type: MinMaxDatetime
         datetime: '{{ config[''start_date''] }}'
         datetime_format: '%Y-%m-%dT%H:%M:%SZ'
-      datetime_format: '%Y-%m-%dT%H:%M:%S.%f%z'
+      datetime_format: '%Y-%m-%dT%H:%M:%S.000%z'
       start_time_option:
         type: RequestOption
         field_name: createdAfter
@@ -724,7 +724,7 @@ streams:
         type: MinMaxDatetime
         datetime: '{{ config[''start_date''] }}'
         datetime_format: '%Y-%m-%dT%H:%M:%SZ'
-      datetime_format: '%Y-%m-%dT%H:%M:%S.%f%z'
+      datetime_format: '%Y-%m-%dT%H:%M:%S.000%z'
       start_time_option:
         type: RequestOption
         field_name: closedAfter
@@ -837,7 +837,7 @@ streams:
         type: MinMaxDatetime
         datetime: '{{ config[''start_date''] }}'
         datetime_format: '%Y-%m-%dT%H:%M:%SZ'
-      datetime_format: '%Y-%m-%dT%H:%M:%S.%f%z'
+      datetime_format: '%Y-%m-%dT%H:%M:%S.000%z'
       start_time_option:
         type: RequestOption
         field_name: createdAfter
@@ -950,7 +950,7 @@ streams:
         type: MinMaxDatetime
         datetime: '{{ config[''start_date''] }}'
         datetime_format: '%Y-%m-%dT%H:%M:%SZ'
-      datetime_format: '%Y-%m-%dT%H:%M:%S.%f%z'
+      datetime_format: '%Y-%m-%dT%H:%M:%S.000%z'
       start_time_option:
         type: RequestOption
         field_name: endedAfter
@@ -1049,7 +1049,7 @@ streams:
         type: MinMaxDatetime
         datetime: '{{ config[''start_date''] }}'
         datetime_format: '%Y-%m-%dT%H:%M:%SZ'
-      datetime_format: '%Y-%m-%dT%H:%M:%S.%f%z'
+      datetime_format: '%Y-%m-%dT%H:%M:%S.000%z'
       start_time_option:
         type: RequestOption
         field_name: evaluatedAfter
@@ -1157,7 +1157,7 @@ streams:
         type: MinMaxDatetime
         datetime: '{{ config[''start_date''] }}'
         datetime_format: '%Y-%m-%dT%H:%M:%SZ'
-      datetime_format: '%Y-%m-%dT%H:%M:%S.%f%z'
+      datetime_format: '%Y-%m-%dT%H:%M:%S.000%z'
       start_time_option:
         type: RequestOption
         field_name: startedAfter
@@ -1265,14 +1265,14 @@ streams:
         type: MinMaxDatetime
         datetime: '{{ config[''start_date''] }}'
         datetime_format: '%Y-%m-%dT%H:%M:%SZ'
-      datetime_format: '%Y-%m-%dT%H:%M:%S.%f%z'
+      datetime_format: '%Y-%m-%dT%H:%M:%S.000%z'
       start_time_option:
         type: RequestOption
         field_name: finishedAfter
         inject_into: request_parameter
       cursor_datetime_formats:
         - '%Y-%m-%dT%H:%M:%S.%f%z'
-version: 0.57.0
+version: 0.65.0
 metadata:
   autoImportSchema:
     batch: false
